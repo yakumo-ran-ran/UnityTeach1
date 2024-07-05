@@ -56,7 +56,34 @@ public class Lesson11 : MonoBehaviour
 
         // print(Input.GetAxis("Horizontal"));
         // print(Input.GetAxis("Vertical"));
-        print(Input.GetAxis("Mouse X"));
+        // print(Input.GetAxis("Mouse X"));
+
+        if (Input.anyKey)
+        {
+            print("Start");
+        }
+
+        if (Input.anyKeyDown)
+        {
+            print("someone key down");
+        }
         
+        print(Input.inputString);
+        string[]strs= Input.GetJoystickNames();
+
+
+        if (Input.touchCount > 0)
+        {
+            Touch t1 = Input.touches[0];
+            print(t1.position);//position
+            print(t1.deltaPosition);//deltaposition
+        }
+
+        Input.multiTouchEnabled = true;
+
+        Input.gyro.enabled = true;
+
+        print(Input.gyro.gravity);
+        print(Input.gyro.rotationRate);
     }
 }
