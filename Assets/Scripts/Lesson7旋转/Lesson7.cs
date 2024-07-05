@@ -10,6 +10,7 @@ public class Lesson7 : MonoBehaviour
         print(this.transform.eulerAngles);
         print(this.transform.localEulerAngles);
         print(transform.localEulerAngles); 
+        
     }
 
     // Update is called once per frame

@@ -9,6 +9,17 @@ public class Lesson12 : MonoBehaviour
     {
         Resolution r = Screen.currentResolution;
         print(r.height+""+r.width+""+r.refreshRateRatio);
+        print(Screen.width);
+        print(Screen.height);
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        Screen.fullScreen = true;
+        Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+        Screen.autorotateToLandscapeLeft = true;
+        Screen.autorotateToLandscapeRight = true;
+        Screen.autorotateToPortraitUpsideDown = true;
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
+        //Set Resolution
+        // Screen.SetResolution();
     }
 
     // Update is called once per frame
