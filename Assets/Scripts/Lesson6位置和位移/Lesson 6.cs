@@ -45,7 +45,7 @@ public class Lesson6 : MonoBehaviour
         Vector3 vPos = transform.localPosition;
         vPos.x = 10;
         transform.localPosition = vPos;
-        
+        print("Hello Git");
         
         print(transform.forward);
         print(transform.right);
