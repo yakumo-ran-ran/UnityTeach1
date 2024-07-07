@@ -14,6 +14,10 @@ public class Lesson11Ex : MonoBehaviour
 
     public Transform pkPos;
     public float pkRotateSpeed=20;
+
+    public GameObject bullet;
+
+    public Transform bulletPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,5 +33,12 @@ public class Lesson11Ex : MonoBehaviour
         head.Rotate(Vector3.up*headRotateSpeed*Time.deltaTime*Input.GetAxis("Mouse X"),Space.Self);
         
         pkPos.Rotate(Vector3.right*rotateSpeed*Time.deltaTime*Input.mouseScrollDelta.y);
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            GameObject obj= Instantiate(bullet);
+            obj.transform.position=bulletPos.position;
+            obj.transform.eulerAngles = bulletPos.eulerAngles;
+        }
     }
 }
