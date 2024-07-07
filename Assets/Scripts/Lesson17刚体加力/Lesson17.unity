@@ -615,6 +615,7 @@ GameObject:
   - component: {fileID: 2007827740}
   - component: {fileID: 2007827739}
   - component: {fileID: 2007827738}
+  - component: {fileID: 2007827744}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -747,6 +748,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 30.8, y: 37.06, z: 0}
+--- !u!75 &2007827744
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007827737}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
